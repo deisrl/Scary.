@@ -87,7 +87,7 @@ const client = new Discord.Client();
 
 
     // blockly code
-    await s4d.client.login('Your bot token').catch((e) => {
+    await s4d.client.login(process.env.TOKEN).catch((e) => {
         const tokenInvalid = true;
         const tokenError = e;
         if (e.toString().toLowerCase().includes("token")) {
